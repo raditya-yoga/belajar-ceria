@@ -1,0 +1,15 @@
+# Konfigurasi Supabase CLI untuk projek Belajar Ceria.
+# Ubah project_id sesuai nama projek Supabase Anda (atau jalankan `supabase link`).
+
+project_id = "belajar-ceria"
+
+[functions.create-order]
+# Wajib login: hanya user terautentikasi yang boleh membuat pesanan.
+verify_jwt = true
+
+[functions.confirm-payment]
+# Halaman /bayar dibuka dari HP yang belum tentu login.
+verify_jwt = false
+
+[functions.get-order]
+verify_jwt = false

@@ -1,0 +1,10 @@
+{
+  "//": "Edge Functions berjalan di runtime Deno (Supabase), bukan Node/Vite. File ini menandai folder functions sebagai projek Deno.",
+  "compilerOptions": {
+    "lib": ["deno.window", "dom"],
+    "strict": true
+  },
+  "imports": {
+    "@supabase/supabase-js@2": "https://esm.sh/@supabase/supabase-js@2"
+  }
+}
